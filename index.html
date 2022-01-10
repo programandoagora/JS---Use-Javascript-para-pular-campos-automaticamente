@@ -2,41 +2,123 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[FÁCIL] Como inserir uma div dentro de outra div</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charSet="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Pulando Campos Automaticamente Após o Preenchimento com Javascript</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
-    <div class="container">
-        <div class="main">
-            <h2>Título da Div</h2>
-            <hr />
-        </div>
-        <div class="content">
-            <h3>Conteúdo da Div</h3>
-            <div class="inner">
-                <img src="img/businessman.jpg" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto voluptatem, inventore incidunt hic ab corrupti vero corporis? Molestias impedit distinctio, veritatis nihil delectus voluptas dolorum repudiandae cupiditate soluta
-                    et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br /> <br /> Cumque, doloribus vero, atque dignissimos nam libero sed, nobis maxime quod sit adipisci veniam similique a dolor consequatur magnam voluptate dolorem quisquam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod reiciendis et praesentium voluptatibus at blanditiis quidem fugiat natus recusandae mollitia nesciunt explicabo, numquam, officia quos, atque eveniet deserunt molestiae.Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas non deleniti distinctio repudiandae. Autem, voluptatum repellendus? Fuga eveniet officia tempore, odio, perferendis, repellendus illo voluptatem vitae illum aperiam eaque.
-                </p>
+<body data-site="MP" data-country="BR" class="platform--mp">
+    <header role="banner" class="nav-header">
+        <div class="nav-header-menu-wrapper">
+            <div class="nav-header-menu-container">
+                <a class="nav-logo" href="#" aria-label="Logo"></a>
+                <div class="nav-header-guest">
+                    <a class="option-help-tablet" href="#" target="_blank" rel="noopener noreferrer" role="button">
+                        <i class="option-help-icon"></i>
+                    </a>
+                </div>
             </div>
         </div>
-        <hr />
-        <input type="button" onclick="run()" class="btn-movie" value="Clique aqui">
-    </div>
+    </header>
+
+    <main role="main" id="root-app">
+        <div class="email_nickname_view container" data-reactroot="">
+            <div class="wrap">
+                <div class="main">
+                    <div class="center-card__billboard"></div>
+                    <div class="andes-card andes-card--flat andes-card--default center-card__body andes-card--padding-default">
+                        <div class="enter-code__content">
+                            <p class="enter-code__title">Informe o código de verificação</p>
+                            <p class="enter-code__description">Você recebeu um número de 6 dígitos por SMS.</p>
+                            <form id="enter-code-form" method="POST" novalidate="" name="F1">
+                                <label class="andes-form-control--numeric input-suffix-code andes-form-control--centered">
+                  <div class="andes-form-control--numeric andes-form-control--numeric-wrapper" >
+                    <div class="andes-form-control__textfield-space">
+                      <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel" pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo1" onkeyUp="javascript:jumpto('campo1','campo2')">
+                        </div>
+                      </label>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel"  pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo2" onkeyUp="javascript:jumpto('campo2','campo3')">
+                        </div>
+                      </label>
+                        </div>
+                        <div class="andes-form-control__textfield-space andes-form-control__textfield-space--big">
+                            <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel" pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo3" onkeyUp="javascript:jumpto('campo3','campo4')">
+                        </div>
+                      </label>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel" pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo4" onkeyUp="javascript:jumpto('campo4','campo5')">
+                        </div>
+                      </label>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel" pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo5" onkeyUp="javascript:jumpto('campo5','campo6')">
+                        </div>
+                      </label>
+                        </div>
+                        <div class="andes-form-control__textfield-space">
+                            <label class="andes-form-control andes-form-control--textfield andes-form-control--centered andes-form-control--default">
+                        <div class="andes-form-control__control">
+                          <input type="tel" pattern="[0-9]*" value="" rows="1" class="andes-form-control__field" maxlength="1" name="campo6" onkeyUp="javascript:jumpto('campo6','campo1')">
+                        </div>
+                      </label>
+                        </div>
+                    </div>
+                    <div class="andes-form-control__bottom">
+                        <span class="andes-form-control__message"></span>
+                    </div>
+                    </label>
+                    </form>
+                    <button type="submit" onClick="page()" id="btn-enviar" class="andes-button enter-code__verify-code andes-button--large andes-button--loud andes-button--disabled" disabled> 
+                        <span class="andes-button__content" >Continuar</span>
+                    </button>
+                    <button type="button" class="andes-button enter-code__retry andes-button--large andes-button--quiet andes-button--disabled" disabled="">
+                <span class="andes-button__content">Reenviar código em<!-- --> 00:18</span>
+              </button></div>
+                <div class="enter-code__footer">
+                    <a role="button" href="#" class="andes-button enter-code__choose-other-method andes-button--large andes-button--transparent">
+                        <span class="andes-button__content">Enviar por outro meio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </main>
+
+
+    <footer class="login-footer">
+        <div><a class="login-footer_link" href="#" target="_blank">Como cuidamos da sua privacidade</a></div>
+        <div class="login-footer_copyright">Programando Agora</div>
+    </footer>
+
 
     <script>
-        function run() {
-            document.getElementsByClassName('main')[0].appendChild(
-                document.getElementsByClassName('content')[0]
-            )
+        function jumpto(campoatual, proxcampo) {
+            var tamanho_max = eval("document.F1." + campoatual + ".maxLength");
+            var tamanho_atual = eval("document.F1." + campoatual + ".value.length");
+            if (tamanho_atual = tamanho_max) {
+                eval("document.F1." + proxcampo + ".focus();");
+            }
         }
     </script>
+
+
 
 </body>
 
