@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[FÁCIL] Como inserir uma div dentro de outra div</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>Título da Div</h2>
+            <hr />
+        </div>
+        <div class="content">
+            <h3>Conteúdo da Div</h3>
+            <div class="inner">
+                <img src="img/businessman.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis iusto voluptatem, inventore incidunt hic ab corrupti vero corporis? Molestias impedit distinctio, veritatis nihil delectus voluptas dolorum repudiandae cupiditate soluta
+                    et. Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br /> <br /> Cumque, doloribus vero, atque dignissimos nam libero sed, nobis maxime quod sit adipisci veniam similique a dolor consequatur magnam voluptate dolorem quisquam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quod reiciendis et praesentium voluptatibus at blanditiis quidem fugiat natus recusandae mollitia nesciunt explicabo, numquam, officia quos, atque eveniet deserunt molestiae.Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Esse voluptas non deleniti distinctio repudiandae. Autem, voluptatum repellendus? Fuga eveniet officia tempore, odio, perferendis, repellendus illo voluptatem vitae illum aperiam eaque.
+                </p>
+            </div>
+        </div>
+        <hr />
+        <input type="button" onclick="run()" class="btn-movie" value="Clique aqui">
+    </div>
+
+    <script>
+        function run() {
+            document.getElementsByClassName('main')[0].appendChild(
+                document.getElementsByClassName('content')[0]
+            )
+        }
+    </script>
+
+</body>
+
+</html>
